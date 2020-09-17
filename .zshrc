@@ -14,6 +14,7 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
 SPACESHIP_CHAR_SYMBOL="$ "
 SPACESHIP_EXIT_CODE_PREFIX="exited with "
+SPACESHIP_BATTERY_THRESHOLD=90
 ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
