@@ -106,6 +106,7 @@ source $ZSH/oh-my-zsh.sh
 
 # eval `dircolors /path/to/dircolorsdb`
 
+export KERL_BUILD_DOCS=true
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 export PATH="$HOME/.emacs.d/bin/:$PATH"
