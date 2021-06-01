@@ -8,7 +8,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-SPACESHIP_ELIXIR_DEFAULT_VERSION=1.10.4
+SPACESHIP_NODE_DEFAULT_VERSION=v14.17.0
+SPACESHIP_ELIXIR_DEFAULT_VERSION=1.12.1
 SPACESHIP_EXIT_CODE_SHOW=true
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
@@ -111,3 +112,5 @@ export KERL_BUILD_DOCS=true
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 export PATH="$HOME/.emacs.d/bin/:$PATH"
+
+alias cls="clear && printf '\e[3J'"
