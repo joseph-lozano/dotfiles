@@ -9,6 +9,7 @@ local servers = {
 	"yamlls",
   "prismals",
   "rust_analyzer",
+  "elixirls",
 }
 
 local settings = {

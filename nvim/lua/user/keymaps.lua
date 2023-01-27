@@ -79,6 +79,12 @@ keymap("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<cr>", opts)
 keymap("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<cr>", opts)
 keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
 
+-- harpoon
+keymap("n", "<leader>hm", "<cmd>lua require'harpoon.mark'.add_file()<cr>", opts)
+keymap("n", "<leader>ha", "<cmd>lua require'harpoon.ui'.toggle_quick_menu()<cr>", opts)
+keymap("n", "<leader>hh", "<cmd>lua require'harpoon.ui'.nav_prev()<cr>", opts)
+keymap("n", "<leader>hl", "<cmd>lua require'harpoon.ui'.nav_next()<cr>", opts)
+
 -- LSP
 keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts)
 -- Undotree

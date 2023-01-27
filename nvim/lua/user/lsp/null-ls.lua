@@ -16,11 +16,13 @@ null_ls.setup {
       -- extra_filetypes = { "toml" },
       -- extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
     -- },
+    formatting.mix,
     formatting.prettier,
     formatting.black.with { extra_args = { "--fast" } },
     formatting.prismaFmt,
     formatting.stylua,
     formatting.google_java_format,
     diagnostics.flake8,
+    -- diagnostics.credo,
   },
 }
