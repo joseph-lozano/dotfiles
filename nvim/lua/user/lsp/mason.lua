@@ -31,6 +31,8 @@ require("mason-lspconfig").setup({
 	automatic_installation = true,
 })
 
+require("lsp-inlayhints").setup()
+
 local lspconfig_status_ok, lspconfig = pcall(require, "lspconfig")
 if not lspconfig_status_ok then
 	return
