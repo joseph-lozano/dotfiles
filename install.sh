@@ -7,7 +7,7 @@ sudo chsh -s $(which zsh)
 # Clone the asdf repo
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1
 
-curl -fL https://github.com/dandavison/delta/releases/download/0.15.1/git-delta-musl_0.16.5_amd64.deb -o delta.deb
+curl -fL https://github.com/dandavison/delta/releases/download/0.15.1/git-delta-musl_0.15.1_amd64.deb -o delta.deb
 
 sudo apt update && sudo apt upgrade -y
 
