@@ -30,3 +30,6 @@ cat <<EOL >> ~/.gitconfig
 [diff]
     colorMoved = default
 EOL
+
+
+cat .zshrc > $HOME/.zshrc
