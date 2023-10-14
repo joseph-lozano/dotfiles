@@ -3,6 +3,7 @@
 # Change the default shell to zsh for the current user
 sudo chsh -s $(which zsh)
 
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Clone the asdf repo
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1
