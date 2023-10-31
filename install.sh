@@ -12,6 +12,8 @@ curl -fL https://github.com/dandavison/delta/releases/download/0.15.1/git-delta-
 
 sudo apt update && sudo apt upgrade -y
 
+sudo apt install gh
+
 yes | sudo dpkg -i delta.deb
 
 cat <<EOL >> ~/.gitconfig
