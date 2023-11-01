@@ -34,6 +34,7 @@ cat <<EOL >> ~/.gitconfig
     colorMoved = default
 EOL
 
+git config --global alias.hist "log --pretty=format:'%C(yellow)[%ad]%C(reset) %C(green)[%h]%C(reset) | %C(red)%s %C(bold red){{%an}}%C(reset) %C(blue)%d%C(reset)' --graph --date=short"
 
 cat .zshrc > $HOME/.zshrc
 cat .p10k.zsh > $HOME/.p10k.zsh
