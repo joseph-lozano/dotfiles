@@ -1,0 +1,17 @@
+[push]
+	default = simple
+[user]
+	name = Joseph Lozano
+	email = me@lozanojoseph.com
+[core]
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true    # use n and N to move between diff sections
+[merge]
+	conflictstyle = diff3
+[diff]
+	colorMoved = default
+[alias]
+	hist = log --pretty=format:'%C(yellow)[%ad]%C(reset) %C(green)[%h]%C(reset) | %C(red)%s %C(bold red){{%an}}%C(reset) %C(blue)%d%C(reset)' --graph --date=short
