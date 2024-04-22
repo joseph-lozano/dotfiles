@@ -5,10 +5,10 @@ sudo chsh -s $(which zsh)
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-# Clone the asdf repo
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1
+# Install mise-en-pace
+curl https://mise.run | sh
 
-curl -fL https://github.com/dandavison/delta/releases/download/0.15.1/git-delta-musl_0.15.1_amd64.deb -o delta.deb
+curl -fL https://github.com/dandavison/delta/releases/download/0.17.0/git-delta-musl_0.17.0_amd64.deb -o delta.deb
 
 sudo apt update && sudo apt upgrade -y
 
