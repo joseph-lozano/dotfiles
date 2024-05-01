@@ -1,3 +1,8 @@
+# Attach to ssh_tmux session
+if [[ $- =~ i ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_TTY" ]]; then
+ tmux new-session -s ssh_tmux || tmux attach-session -t ssh_tmux 
+fi
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -118,8 +123,3 @@ alias phx="iex -S mix phx.server"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval "$(mise activate zsh)"
-
-# attach to ssh_tmux session
-if [[ $- =~ i ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_TTY" ]]; then
- tmux new-session -s ssh_tmux || tmux attach-session -t ssh_tmux 
-fi
