@@ -114,8 +114,6 @@ alias zshconfig="vim ~/.zshrc"
 alias pn="pnpm"
 alias pnx="pnpx"
 
-alias phx="iex -S mix phx.server"
-
 # bun completions
 [ -s "/Users/joseph/.bun/_bun" ] && source "/Users/joseph/.bun/_bun"
 
